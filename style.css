@@ -181,14 +181,14 @@ body{
     margin: 0;
   }
   
-  .pricing-card:first-child {
+  card:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
     transform-origin: right;
   }
   
-  .pricing-card:last-child {
+  card:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
@@ -279,4 +279,43 @@ body{
     align-items: center;
     background-color: #1B2522;
     padding: .5rem 1rem;
+  }
+  @media (max-width: 700px) {
+    .header {
+      background-position-x: 65%;
+    }
+    .curriculum-grid {
+      grid-template-columns: minmax(auto, 450px);
+      row-gap: 30px;
+    }
+    .container {
+      flex-wrap: wrap;
+    }
+  
+    .card,
+    .card.accent {
+      width: 100%;
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .card:first-child,
+    .card:last-child {
+      border-radius: .3em;
+      border-right: 1px solid black;
+      border-left: 1px solid black;
+      transform-origin: center;
+    }
+  
+    .card:last-child {
+      margin-bottom: 0;
+    }
+  
+    .feature {
+      text-align: center;
+    }
+  
+    .feature.inactive {
+      display: none;
+    }
   }
