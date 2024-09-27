@@ -292,44 +292,132 @@ body{
     background-color: #1B2522;
     padding: .5rem 1rem;
   }
-  @media (max-width: 780px) {
-    .header {
-      background-position-x: 65%;
-      height: 100vh;
-      width: 100vw;
-    }
-    .curriculum-grid {
-      grid-template-columns: minmax(auto, 450px);
-      row-gap: 30px;
-    }
-    .container {
-      flex-wrap: wrap;
-    }
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
   
-    .card,
-    .card.accent {
-      width: 100%;
-      margin: 0;
-      margin-bottom: 1rem;
-    }
-  
-    .card:first-child,
-    .card:last-child {
-      border-radius: .3em;
-      border-right: 1px solid black;
-      border-left: 1px solid black;
-      transform-origin: center;
-    }
-  
-    .card:last-child {
-      margin-bottom: 0;
-    }
-  
-    .feature {
-      text-align: center;
-    }
-  
-    .feature.inactive {
-      display: none;
-    }
+  /*Navbar adjustments*/
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 8px;
   }
+  .logo {
+    width: 100px;
+  .nav_items {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav_items a {
+    margin-left: 0;
+    margin-bottom: 10px; 
+    font-size: 0.9rem; 
+  }
+  
+  /*Heading and Buttons*/
+  .heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .sub_head {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .btn {
+    padding: 0.5em 1.2em;
+    font-size: 0.9rem;
+  }
+
+  /*Curriculum Section*/
+  .curriculum {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  /*Pricing Cards*/
+  .container {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%; 
+    margin-bottom: 1.5rem;
+  }
+  
+  /*Contact Form*/
+  .form {
+    padding: 1rem;
+  }
+  .form input, .form textarea {
+    font-size: 1rem;
+  }
+
+  /*Footer adjustments*/
+  .bottom {
+    flex-direction: column;
+    align-items: center;
+  }
+  .nav_items {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .nav_items a {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+}
+
+/*Media Query for Smaller Mobile Devices*/
+@media (max-width: 480px) {
+  
+  /*Navbar*/
+  .navbar {
+    padding: 10px;
+  }
+  .logo {
+    width: 80px; 
+  }
+  .nav_items a {
+    font-size: 0.8rem;
+  }
+
+  /*Header Section*/
+  .header {
+    background-position: center;
+  }
+  .heading {
+    font-size: 1.8rem;
+  }
+  .sub_head {
+    font-size: 1rem;
+  }
+
+  /*Curriculum Section*/
+  .curriculum-item img {
+    width: 40px; 
+  }
+  .curriculum-item p {
+    font-size: 0.9rem;
+  }
+
+  /*Pricing Cards*/
+  .plan-name {
+    font-size: 1.3rem;
+  }
+  .plan-price {
+    font-size: 1.5rem;
+  }
+  
+  /*Contact Form*/
+  .form input, .form textarea {
+    font-size: 0.85rem;
+  }
+
+  /*ooter adjustments*/
+  .bottom {
+    padding: 0.5rem;
+  }
+  .nav_items {
+    font-size: 0.8rem;
+  }
+}
