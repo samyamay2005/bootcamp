@@ -316,7 +316,7 @@ body{
     padding: .5rem 1rem;
   }
 
-@media (Width <= 900px) {
+@media (max-width) {
   .container{
       display: grid;
       justify-content: center;
@@ -327,7 +327,7 @@ body{
       padding: 0.20rem 0.8rem;
       font-size: .75rem;
   }
-  .headln{
+  .heading{
       text-align: center;
   }
   .card1{
