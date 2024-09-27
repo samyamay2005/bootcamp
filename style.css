@@ -152,7 +152,19 @@ body{
   }  
   .curriculum-item img {
     width: 50px;
-    margin-right: 1rem;
+    margin-right: 1rem;    
+  }
+  .curriculum-item:hover img {
+    animation: shake 100ms;
+  }
+  @keyframes shake {
+    25% {
+      transform: rotate(5deg);
+    }
+  
+    75% {
+      transform: rotate(-5deg);
+    }
   }
   #pricing{
     background-color: #7bcdc4;
@@ -181,14 +193,14 @@ body{
     margin: 0;
   }
   
-  card:first-child {
+  .card:first-child {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-right: none;
     transform-origin: right;
   }
   
-  card:last-child {
+  .card:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
     border-left: none;
@@ -280,7 +292,7 @@ body{
     background-color: #1B2522;
     padding: .5rem 1rem;
   }
-  @media (max-width: 700px) {
+  @media (max-width: 780px) {
     .header {
       background-position-x: 65%;
       height: 100vh;
