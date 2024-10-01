@@ -325,8 +325,7 @@ body{
       width: 100%;
   }
   .curriculum {
-    display: grid;
-    grid-template-columns: repeat(1, minmax(auto, 450px));
+    display: flex;
     justify-content: center;
     row-gap: 10px;
     column-gap: 50px;
