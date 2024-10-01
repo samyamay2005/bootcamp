@@ -322,6 +322,14 @@ body{
       justify-content: center;
       grid-template-columns: 345px;
       row-gap: 30px;
+      width: 100%;
+  }
+  .curriculum {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(auto, 450px));
+    justify-content: center;
+    row-gap: 10px;
+    column-gap: 50px;
   }
   nav{
       padding: 0.20rem 0.8rem;
