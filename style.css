@@ -316,11 +316,20 @@ body{
     padding: .5rem 1rem;
   }
 
-@media (max-width) {
+@media (max-width ) {
+  .header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+  }
   .container{
       display: grid;
       justify-content: center;
-      grid-template-columns: 345px;
+      grid-template-columns: 523px;
       row-gap: 30px;
       width: 100%;
   }
